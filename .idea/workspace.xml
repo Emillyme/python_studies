@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="">
+    <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="test_commit">
+      <change afterPath="$PROJECT_DIR$/ex0004.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex003.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex000.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex000.py" afterDir="false" />
     </list>
@@ -23,11 +26,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2bQQTKGcwnl4qkF37D8INEL7CPk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,13 +40,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.ex000.executor": "Run",
+    "Python.ex0004.executor": "Run",
+    "Python.ex001.executor": "Run",
+    "Python.ex002.executor": "Run",
+    "Python.ex003.executor": "Run",
+    "Python.ex005.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "proofread",
     "settings.editor.splitter.proportion": "0.2690583"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\PythonCharm\python_studies" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -58,6 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1706144829621</updated>
     </task>
+    <task id="LOCAL-00001" summary="test_commit">
+      <option name="closed" value="true" />
+      <created>1706145261721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706145261721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test_commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_commit" />
   </component>
 </project>
