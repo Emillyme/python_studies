@@ -10,7 +10,7 @@ def exercicios():
 [5] Média
 [6] Conversão: metros para centímetros e milímetros
 [7] Tabuada
-[8] Conversão Moedas
+[8] Conversão Moedas.
 [9] Pintando a Parede
 [10] Desconto
     
