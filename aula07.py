@@ -13,6 +13,9 @@ def exercicios():
 [8] Conversão Moedas.
 [9] Pintando a Parede
 [10] Desconto
+[11] Salário adicional
+[12] Conversao de Temperatura
+[13] Aluguel de carros
     
 Digite o exercício que você quer ver: ''')
 
@@ -36,6 +39,12 @@ Digite o exercício que você quer ver: ''')
         pintandoParede()
     elif opcao == '10':
         desconto()
+    elif opcao == '11':
+        salarioAdicional()
+    elif opcao == '12':
+        conversaoTemperatura()
+    elif opcao == '13':
+        aluguelCarros()
 
 
 def printsFormas():
@@ -155,6 +164,27 @@ def desconto():
     precoComDesconto = precoOriginal - (precoOriginal * desconto/100)
 
     print(f'O preço R${precoOriginal:.2f} com desconto de {desconto}%, vai ficar R${precoComDesconto:.2f}!')
+
+def salarioAdicional():
+    salarioInicial = float(input('Digite seu salário inicial: '))
+    adicional = float(input('Digite a porcentagem do adicional: '))
+    precoComAdicional = salarioInicial + (salarioInicial * adicional/100)
+
+    print(f'O seu novo salário é R$ {precoComAdicional:.2f}')
+
+def conversaoTemperatura():
+    c = int(input('Digite a temperatura em Celsius: '))
+    f = (c * 1.8 + 32)
+
+    print(f'A conversão da temperatura para Fahrenheit é {f}')
+
+def aluguelCarros():
+    dias = int(input('Digite quantos dias de carro você percorreu: '))
+    km = float(input('Quantidade de km percorridos: '))
+    diasPagos = dias * 60
+    kmPagos = km * 0.15
+
+    print(f'O preço a pagar pelos dias e km percorridos é R${kmPagos + diasPagos:.2f}')
 
 def main():
     exercicios()
