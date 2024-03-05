@@ -1,5 +1,5 @@
 
-palavra = 'python'
+palavra = 'mesa digitalizadora'
 letrasUsuario = []
 chances = 7
 ganhou = False
