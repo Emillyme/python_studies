@@ -1,8 +1,9 @@
 # Importações de biblioteca:
 import random
-import threading
 import time
-
+import threading
+import os
+import signal
 
 def inicio():
     print('-' * 10, '\033[1;35mBEM-VINDO ao SORTEADOR!\033[m', '-' * 10)
@@ -31,17 +32,22 @@ def perder_vida(numero_escondido, chute):
     return vida_perdida
 
 
+def controlar_tempo():
+    gid = os.getpid()
+    time.sleep(10)
+    print('Seu tempo acabou!')
+    os.kill(gid, signal.SIGTERM)
+
 def main():
-    tempo_inicial = time.time()
+    gid = os.getpid()
     chances = 4
-    # ganhou = False
     vida_perdida = 0
     vida_usuario = 100
 
-    threading.Thread(inicio())
-
-
+    inicio()
     numero_escondido = sortear_numero()
+    tempo = threading.Thread(target=controlar_tempo)
+    tempo.start()
 
     while True:
         chances -= 1
@@ -61,13 +67,7 @@ def main():
             break
         else:
             vida_perdida = perder_vida(numero_escondido, chute)
-            # menu(chances, vida_usuario)
-        tempo_atual = time.time()
-        tempo_decorrido = tempo_atual - tempo_inicial
-
-        if tempo_decorrido >= 10:
-            print(f'Você perdeu muito tempo. O número era {numero_escondido}')
-            break
+    os.kill(gid, signal.SIGTERM)
 
 if __name__ == '__main__':
     main()

@@ -2,6 +2,7 @@
 import math
 import random
 import emoji
+import pygame
 
 def exercicios():
     opcao = input('''
@@ -13,6 +14,10 @@ def exercicios():
 [3] emoji
 [4] Quebrando um número
 [5] Pitagoras
+[6] Seno, Cosseno e Tangente
+[7] Sorteando os Alunos
+[8] Embaralhador de lista 
+[9] MP3
     
 Digite o exercício que você quer ver: ''')
 
@@ -26,6 +31,12 @@ Digite o exercício que você quer ver: ''')
         quebrandoUmNúmero()
     elif opcao == '5':
         pitagoras()
+    elif opcao == '6':
+        cos_sen_tang()
+    elif opcao == '7':
+        sorteando_alunos()
+    elif opcao == '8':
+        embaralhando_lista()
 
 def modulos():
     num = int(input('Digite um número: '))
@@ -50,9 +61,47 @@ def quebrandoUmNúmero():
 
 def pitagoras():
     #(a**2 = b**2 + c**2)
-    cateto1 = int(input('Digite o valor do primeiro cateto: '))
-    cateto2 = int(input('Digite o valor do segundo cateto: '))
-    calcHipo = (math.pow(cateto1,2) + math.pow(cateto2, 2))
+    cateto1 = float(input('Digite o valor do primeiro cateto: '))
+    cateto2 = float(input('Digite o valor do segundo cateto: '))
+    # calc_hipo = (cateto1 **2 + cateto2 **2) ** 1/2
+    calc_hipo = math.hypot(cateto1, cateto2)
+
+    print(f'O calculo da hipotenusa é {calc_hipo:.2f}')
+
+def cos_sen_tang():
+   ang = float(input('Digite um angulo: '))
+   seno = math.sin(math.radians(ang))
+   cos = math.cos(math.radians(ang))
+   tang = math.tan(math.radians(ang))
+
+   print(f'''
+    Angulo: {ang}
+    -------
+    Seno: {seno:.2f}
+    Cosseno: {cos:.2f}
+    Tangente: {tang:.2f}
+    ''')
+
+def sorteando_alunos():
+    aluno1 = 'Maria'
+    aluno2 = 'Luiz'
+    aluno3 = 'Nicolas'
+    aluno4 = 'Gravetto'
+    alunos = [aluno1, aluno2, aluno3, aluno4]
+
+    sorteador = random.choice(alunos)
+    print(f'O aluno sorteado foi o {sorteador}!')
+
+def embaralhando_lista():
+    lista = []
+    for i in range(6):
+        num = input(f'{i} - ')
+        lista.append(num)
+
+    random.shuffle(lista)
+    print(lista)
+
+def MP3():
     
 
 def main():

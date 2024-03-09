@@ -2,12 +2,12 @@ import time
 
 while True:
     nome1 = input('Coloque o nome do aluno um: ')
-    nota_aluno1 = int (input(f'digite a nota do aluno {nome1}:'))
+    nota_aluno1 = int(input(f'digite a nota do aluno {nome1}:'))
     print(f'Aluno: {nome1}\n Nota: {nota_aluno1}')
     time.sleep(1)
 
     nome2 = input('Coloque o nome do aluno dois: ')
-    nota_aluno2 = int (input(f'digite a nota do aluno {nome2}: '))
+    nota_aluno2 = int(input(f'digite a nota do aluno {nome2}: '))
     print(f'Aluno: {nome2}\n Nota: {nota_aluno2}')
     time.sleep(1)
 
