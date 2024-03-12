@@ -7,8 +7,7 @@ import os
 
 
 def inicio():
-    print(' ' * 12, '\033[39mMODO\033[m \033[1;35mFÁCIL\033[m \033[39mATIVADO!\033[m')
-    print('-' * 10, '\033[1;35mBEM-VINDO ao SORTEADOR!\033[m', '-' * 10)
+    print('-' * 10, '\033[39mMODO\033[m \033[1;31mDIFÍCIL\033[m \033[39mATIVADO!\033[m', '-' * 10)
     print('''Há um \033[4;37mnúmero escondido\033[m nessas redondezas...
             Adivinhe o número!''')
 
@@ -33,11 +32,11 @@ def perder_vida(numero_escondido, chute):
 def controlar_tempo():
     gid = os.getpid()
     time.sleep(10)
-    print('Seu tempo acabou!')
+    print('\033[1;31mSeu tempo acabou!\033]m')
     os.kill(gid, signal.SIGTERM)
 
 
-def main():
+def main_dificil():
     gid = os.getpid()
     cor_chances = ['\033[1;31m', '\033[1;31m', '\033[1;33m', '\033[1;32m']
     chances = 4
@@ -77,6 +76,3 @@ def main():
         continue
     os.kill(gid, signal.SIGTERM)
 
-
-if __name__ == '__main__':
-    main()

@@ -4,8 +4,7 @@ import time
 
 
 def inicio():
-    print(' ' * 12, '\033[39mMODO\033[m \033[1;35mFÁCIL\033[m \033[39mATIVADO!\033[m')
-    print('-' * 10, '\033[1;35mBEM-VINDO ao SORTEADOR!\033[m', '-' * 10)
+    print('-' * 10, '\033[39mMODO\033[m \033[1;35mFÁCIL\033[m \033[39mATIVADO!\033[m', '-' * 10)
     print('''Há um \033[4;37mnúmero escondido\033[m nessas redondezas...
             Adivinhe o número!''')
 
@@ -27,7 +26,7 @@ def perder_vida(numero_escondido, chute):
     return vida_perdida
 
 
-def main():
+def main_facil():
     cor_chances = ['\033[1;31m', '\033[1;31m', '\033[1;33m', '\033[1;32m']
     chances = 4
     vida_perdida = 0
@@ -63,7 +62,3 @@ def main():
             print('\033[1;31mVocê digitou algo não esperado.\033[m')
             time.sleep(1)
         continue
-
-
-if __name__ == '__main__':
-    main()
