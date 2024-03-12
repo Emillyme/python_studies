@@ -1,42 +1,23 @@
-# Importações de biblioteca:
-import random
-import time
-import threading
-import os
-import signal
+import inquirer
 
-def inicio():
-    print('-' * 10, '\033[1;35mBEM-VINDO ao SORTEADOR!\033[m', '-' * 10)
-    print('''Há um número escondido nessas redondezas...
-            Adivinhe o número!''')
+questions = [
+    inquirer.Text('name', message="What's your name?"),
+    inquirer.List('gender', message="Select your gender", choices=['Male', 'Female', 'Other']),
+]
 
+answers = inquirer.prompt(questions)
 
-def menu(chances, vida_usuario):
-    print(f'\nVocê tem \033[1;31m{chances} chances\033[m...', end=' ')
-    print(f'Sua vida:\033[1;33m {vida_usuario}\033[m')
-
-    return int(input('Digite sua tentativa: '))
+print("Hello, {}!".format(answers['name']))
+print("You selected gender as: {}".format(answers['gender']))
 
 
-def sortear_numero():
-    numero_sorteado = random.randint(1, 100)
-    return numero_sorteado
-
-
-def perder_vida(numero_escondido, chute):
-    if chute > numero_escondido:
-        vida_perdida = chute - numero_escondido
-    else:
-        vida_perdida = numero_escondido - chute
-
-    return vida_perdida
-
-
+# DIFICIL:
 def controlar_tempo():
     gid = os.getpid()
     time.sleep(10)
     print('Seu tempo acabou!')
     os.kill(gid, signal.SIGTERM)
+
 
 def main():
     gid = os.getpid()
@@ -68,6 +49,7 @@ def main():
         else:
             vida_perdida = perder_vida(numero_escondido, chute)
     os.kill(gid, signal.SIGTERM)
+
 
 if __name__ == '__main__':
     main()
