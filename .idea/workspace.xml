@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="clebin">
-      <change afterPath="$PROJECT_DIR$/Trabalho/iniciar_sorteador.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho/inquirerlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/inquirerlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho/sorteador_dificil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/sorteador_dificil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho/sorteador_facil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/sorteador_facil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho/sorteador_medio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/sorteador_medio.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,42 +37,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.agenda.executor": "Run",
-    "Python.aula07.executor": "Run",
-    "Python.aula08.executor": "Run",
-    "Python.calculadora_por_funçao.executor": "Run",
-    "Python.estoque_senai.executor": "Run",
-    "Python.ex000.executor": "Run",
-    "Python.ex0004.executor": "Run",
-    "Python.ex001.executor": "Run",
-    "Python.ex002.executor": "Run",
-    "Python.ex003.executor": "Run",
-    "Python.ex005.executor": "Run",
-    "Python.ex006.executor": "Run",
-    "Python.iniciar_sorteador.executor": "Run",
-    "Python.inquirerlib.executor": "Run",
-    "Python.jogo_da_forca.executor": "Run",
-    "Python.jogo_forcar2.executor": "Run",
-    "Python.jokenpo.executor": "Run",
-    "Python.mercadinho.executor": "Run",
-    "Python.mercadinho2.executor": "Run",
-    "Python.sorteador_dificil.executor": "Run",
-    "Python.sorteador_easy.executor": "Run",
-    "Python.sorteador_facil.executor": "Run",
-    "Python.sorteador_hard (1).executor": "Run",
-    "Python.sorteador_hard.executor": "Run",
-    "Python.sorteador_medium(1).executor": "Run",
-    "Python.sorteador_medium.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/usuario/Downloads",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "settings.editor.splitter.proportion": "0.2690583"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.agenda.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculadora_por_funçao.executor&quot;: &quot;Run&quot;,
+    &quot;Python.estoque_senai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex000.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex0004.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex001.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex002.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex003.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex005.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex006.executor&quot;: &quot;Run&quot;,
+    &quot;Python.iniciar_sorteador.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inquirerlib.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jogo_da_forca.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jogo_da_velha.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jogo_forcar2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jokenpo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mercadinho.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mercadinho2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_dificil.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_easy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_facil.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_hard (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_hard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_medium(1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.sorteador_medium.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/usuario/Downloads&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2690583&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\usuario\Downloads" />
@@ -88,7 +85,7 @@
       <recent name="C:\Users\usuario\PythonCharm\python_studies" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.iniciar_sorteador">
+  <component name="RunManager" selected="Python.jogo_da_velha">
     <configuration name="iniciar_sorteador" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
@@ -128,6 +125,28 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jogo_da_velha" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_studies" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -177,35 +196,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sorteador_hard (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_studies" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/sorteador_hard.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jogo_da_velha" />
         <item itemvalue="Python.iniciar_sorteador" />
         <item itemvalue="Python.inquirerlib" />
         <item itemvalue="Python.sorteador_facil" />
         <item itemvalue="Python.sorteador_dificil" />
-        <item itemvalue="Python.sorteador_hard (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710206040378</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="clebin">
+      <option name="closed" value="true" />
+      <created>1710209606377</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710209606377</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
