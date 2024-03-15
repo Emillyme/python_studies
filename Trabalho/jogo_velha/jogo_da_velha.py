@@ -1,6 +1,9 @@
 # importações
 from itertools import product
 
+# def placar(jogador_atual, ganhador):
+#
+
 def mostrar_jogo(jogo):
     print('     A   B   C')
     for i in range(3):
@@ -54,6 +57,9 @@ def ganhar(jogo, jogador_atual):
 def main():
     jogador1 = 'X'
     jogador2 = 'O'
+    jogador1_pontos = []
+    jogador2_pontos = []
+
     jogo = ([' ', ' ', ' '],
             [' ', ' ', ' '],
             [' ', ' ', ' '])
@@ -61,13 +67,16 @@ def main():
 
     while True:
         mostrar_jogo(jogo)
+        print(f"\nÉ a vez do jogador {jogador_atual}")
         linha, coluna = perguntas()
         if jogo[linha][coluna] == ' ':
             jogo[linha][coluna] = jogador_atual
         else:
             print('Essa posição já está ocupada.')
-
+            continue
         ganhador = ganhar(jogo, jogador_atual)
+        # if ganhador == True:
+        #     jogador1_pontos += 1
 
         if ganhador:
             break
