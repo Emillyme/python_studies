@@ -7,6 +7,7 @@
     <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="clebin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/senai/estoque_senai.py" beforeDir="false" afterPath="$PROJECT_DIR$/senai/estoque_senai.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
     &quot;Python.ex003.executor&quot;: &quot;Run&quot;,
     &quot;Python.ex005.executor&quot;: &quot;Run&quot;,
     &quot;Python.ex006.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ia.executor&quot;: &quot;Run&quot;,
     &quot;Python.iniciar_sorteador.executor&quot;: &quot;Run&quot;,
     &quot;Python.inquirerlib.executor&quot;: &quot;Run&quot;,
     &quot;Python.jogo_da_forca.executor&quot;: &quot;Run&quot;,
@@ -85,7 +87,29 @@
       <recent name="C:\Users\usuario\PythonCharm\python_studies" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.jogo_da_velha">
+  <component name="RunManager" selected="Python.estoque_senai">
+    <configuration name="estoque_senai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_studies" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/senai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/senai/estoque_senai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ia" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
@@ -168,29 +192,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sorteador_facil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_studies" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/sorteador_facil.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -198,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.estoque_senai" />
         <item itemvalue="Python.jogo_da_velha" />
         <item itemvalue="Python.ia" />
         <item itemvalue="Python.iniciar_sorteador" />
         <item itemvalue="Python.inquirerlib" />
-        <item itemvalue="Python.sorteador_facil" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710380949767</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="clebin">
+      <option name="closed" value="true" />
+      <created>1710465433338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710465433338</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

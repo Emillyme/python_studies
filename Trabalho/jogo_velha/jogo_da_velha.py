@@ -1,15 +1,22 @@
-# importações
 from itertools import product
+import inquirer
 
-# def placar(jogador_atual, ganhador):
-#
+
+def pedir_nome(n_jogador:int, simbolizin:str):
+    return input(f'\033[1;37m[{simbolizin}]\033[m Digite o nome do \033[1mjogador {n_jogador}\033[m: ')
+
+
+def menuzin(pontos_O, pontos_x, n1, n2):
+    print(f' \033[1;36mX\033[m = {n1}         \033[1;38mPontos:\033[m {pontos_x}')
+    print(f' \033[1;31mO\033[m = {n2}         \033[1;38mPontos:\033[m {pontos_O}\n')
+
 
 def mostrar_jogo(jogo):
-    print('     A   B   C')
+    print('     \033[1;37mA   B   C\033[m')
     for i in range(3):
-        print(f' {i}   {jogo[i][0]} | {jogo[i][1]} | {jogo[i][2]}')
+        print(f' \033[1;37m{i}\033[m   {jogo[i][0]} \033[1m│\033[m {jogo[i][1]} \033[1m│\033[m {jogo[i][2]}')
         if i < 2:
-            print("   -------------")
+            print("   \033[1m—————————————\033[m")
 
 
 def perguntas():
@@ -54,37 +61,93 @@ def ganhar(jogo, jogador_atual):
     return True
 
 
+def aparecer_blocotexto(pontos_x, pontos_O, n1, n2):
+    try:
+        placarzinho = open("placar3.txt", "a")
+        dados = f'''JOGADOR X: {n1} PONTOS: {pontos_x}
+JOGADOR O: {n2} PONTOS: {pontos_O}\n\n'''
+        placarzinho.write(dados)
+        placarzinho.close()
+        print('Gravado com sucesso')
+    except:
+        print('Erro no cadastro.')
+
+
+def ler_historico():
+    try:
+        with open("placar3.txt", "r") as placar:
+            for historico in placar:
+                print(historico)
+    except FileNotFoundError:
+        print('Arquivo não encontrado.')
+
+
 def main():
-    jogador1 = 'X'
-    jogador2 = 'O'
-    jogador1_pontos = []
-    jogador2_pontos = []
+    print(f'\n\033[1;35mSEJA BEM-VINDO ao jogo da VELHA!\033[m')
+    n1 = pedir_nome(1, 'x')
+    n2 = pedir_nome(2, 'o')
+    jogador1 = {
+        'simbolo': '\033[1;36mX\033[m',
+        'nome_jogador': n1}
+    jogador2 = {
+        'simbolo': '\033[1;31mO\033[m',
+        'nome_jogador': n2}  # '\033[1;31mO' # '\033[1;36mX\033[m'
+    pontos_O = 0
+    pontos_x = 0
 
     jogo = ([' ', ' ', ' '],
             [' ', ' ', ' '],
             [' ', ' ', ' '])
-    jogador_atual = jogador2
+
+    jogador_atual = jogador2['simbolo']
 
     while True:
-        mostrar_jogo(jogo)
-        print(f"\nÉ a vez do jogador {jogador_atual}")
-        linha, coluna = perguntas()
-        if jogo[linha][coluna] == ' ':
-            jogo[linha][coluna] = jogador_atual
-        else:
-            print('Essa posição já está ocupada.')
-            continue
-        ganhador = ganhar(jogo, jogador_atual)
-        # if ganhador == True:
-        #     jogador1_pontos += 1
+        while True:
+            print('\n\033[1;45m      JOGO DA VELHA      \033[m')
+            menuzin(pontos_O, pontos_x, n1, n2)
+            mostrar_jogo(jogo)
 
-        if ganhador:
+            print(f"\n Vez do jogador {jogador_atual}")
+            linha, coluna = perguntas()
+            if jogo[linha][coluna] == ' ':
+                jogo[linha][coluna] = jogador_atual
+            else:
+                print('Essa posição já está ocupada.')
+                continue
+            ganhador = ganhar(jogo, jogador_atual)
+
+            if ganhador:
+                if jogador_atual == jogador1['simbolo']:
+                    pontos_x += 1
+                else:
+                    pontos_O += 1
+                menuzin(pontos_O, pontos_x, n1, n2)
+                aparecer_blocotexto(pontos_x, pontos_O, n1, n2)
+                break
+
+            if jogador_atual == jogador1['simbolo']:
+                jogador_atual = jogador2['simbolo']
+            else:
+                jogador_atual = jogador1['simbolo']
+
+        # # QUESTIONS PARA FAZER AO JOGADOR PÓS ELE JOGAR
+        questions = [
+            inquirer.List('escolha', message="Deseja continuar competindo?",
+                          choices=['SOU FODÃO!!', 'Sair', 'Histórico de Partidas'])
+        ]
+
+        answers = inquirer.prompt(questions)
+
+        if answers['escolha'] == 'SOU FODÃO!!':
+            continue
+
+        elif answers['escolha'] == 'Sair':
+            print('Saindo...')
             break
 
-        if jogador_atual == jogador1:
-            jogador_atual = jogador2
-        else:
-            jogador_atual = jogador1
+        elif answers['escolha'] == 'Histórico de Partidas':
+            ler_historico()
+            continue
 
 
 if __name__ == '__main__':
