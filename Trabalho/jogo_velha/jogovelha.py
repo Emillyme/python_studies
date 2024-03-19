@@ -1,5 +1,8 @@
+import time
 from itertools import product
 import inquirer
+import sys
+from velha_5x5 import main5
 
 
 def pedir_nome(n_jogador:int, simbolizin:str):
@@ -56,9 +59,8 @@ def ganhar(jogo, jogador_atual):
         if jogo[i][j] == ' ':
             return False
 
-    mostrar_jogo(jogo)
     print('Empate')
-    return True
+    return False
 
 
 def aparecer_blocotexto(pontos_x, pontos_O, n1, n2):
@@ -86,22 +88,17 @@ def main():
     print(f'\n\033[1;35mSEJA BEM-VINDO ao jogo da VELHA!\033[m')
     n1 = pedir_nome(1, 'x')
     n2 = pedir_nome(2, 'o')
-    jogador1 = {
-        'simbolo': '\033[1;36mX\033[m',
-        'nome_jogador': n1}
-    jogador2 = {
-        'simbolo': '\033[1;31mO\033[m',
-        'nome_jogador': n2}  # '\033[1;31mO' # '\033[1;36mX\033[m'
+    jogador1 = {'simbolo': '\033[1;36mX\033[m', 'nome_jogador': n1}
+    jogador2 = {'simbolo': '\033[1;31mO\033[m', 'nome_jogador': n2}
     pontos_O = 0
     pontos_x = 0
 
-    jogo = ([' ', ' ', ' '],
-            [' ', ' ', ' '],
-            [' ', ' ', ' '])
-
-    jogador_atual = jogador2['simbolo']
-
     while True:
+        jogo = ([' ', ' ', ' '],
+                [' ', ' ', ' '],
+                [' ', ' ', ' '])
+        jogador_atual = jogador2['simbolo']
+
         while True:
             print('\n\033[1;45m      JOGO DA VELHA      \033[m')
             menuzin(pontos_O, pontos_x, n1, n2)
@@ -113,41 +110,51 @@ def main():
                 jogo[linha][coluna] = jogador_atual
             else:
                 print('Essa posição já está ocupada.')
+                time.sleep(0.5)
                 continue
-            ganhador = ganhar(jogo, jogador_atual)
 
-            if ganhador:
+            if ganhar(jogo, jogador_atual):
                 if jogador_atual == jogador1['simbolo']:
                     pontos_x += 1
-                else:
+                elif jogador_atual == jogador2['simbolo']:
                     pontos_O += 1
                 menuzin(pontos_O, pontos_x, n1, n2)
+                time.sleep(1.5)
+                for i in range(3):
+                    print('.', end='')
+                    time.sleep(1)
                 aparecer_blocotexto(pontos_x, pontos_O, n1, n2)
                 break
-
-            if jogador_atual == jogador1['simbolo']:
-                jogador_atual = jogador2['simbolo']
             else:
-                jogador_atual = jogador1['simbolo']
+                # Alternar entre jogadores
+                if jogador_atual == jogador1['simbolo']:
+                    jogador_atual = jogador2['simbolo']
+                else:
+                    jogador_atual = jogador1['simbolo']
 
-        # # QUESTIONS PARA FAZER AO JOGADOR PÓS ELE JOGAR
+            if all(all(cell != ' ' for cell in row) for row in jogo):
+                print('Tabuleiro cheio. O jogo terminou em empate.\n')
+                time.sleep(1.5)
+                break
+
         questions = [
             inquirer.List('escolha', message="Deseja continuar competindo?",
-                          choices=['SOU FODÃO!!', 'Sair', 'Histórico de Partidas'])
+                          choices=['MAIS UMA PARTIDA QUERIDÃO?',
+                                   'Sair e ver Histórico de Partida',
+                                   'UM DESAFIO?'])
         ]
 
         answers = inquirer.prompt(questions)
 
-        if answers['escolha'] == 'SOU FODÃO!!':
-            continue
-
-        elif answers['escolha'] == 'Sair':
-            print('Saindo...')
-            break
-
-        elif answers['escolha'] == 'Histórico de Partidas':
+        if answers['escolha'] == 'Sair e ver Histórico de Partida':
             ler_historico()
+            sys.exit()
+
+        elif answers['escolha'] == 'MAIS UMA PARTIDA QUERIDÃO?':
             continue
+
+        elif answers['escolha'] == 'UM DESAFIO?':
+            main5()
 
 
 if __name__ == '__main__':
