@@ -141,14 +141,15 @@ def main():
         questions = [
             inquirer.List('escolha', message="Deseja continuar competindo?",
                           choices=['MAIS UMA PARTIDA QUERIDÃO?',
-                                   'Histórico de Partida',
+                                   'Sair e ver Histórico de Partida',
                                    'UM DESAFIO?'])
         ]
 
         answers = inquirer.prompt(questions)
 
-        if answers['escolha'] == 'Histórico de Partida':
+        if answers['escolha'] == 'Sair e ver Histórico de Partida':
             banco_dados.imprimir_dados()
+            sys.exit()
 
         elif answers['escolha'] == 'MAIS UMA PARTIDA QUERIDÃO?':
             continue
