@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="senai">
-      <change afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/jogovelha.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/velha_5x5.py" afterDir="false" />
+    <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="trabaio">
+      <change afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/banco_dados.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlite/001.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_da_velha.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trabalho/jogo_velha/jogovelha.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/jogovelha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trabalho/jogo_velha/velha_5x5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/velha_5x5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +42,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.001.executor": "Run",
     "Python.agenda.executor": "Run",
     "Python.aula07.executor": "Run",
     "Python.aula08.executor": "Run",
+    "Python.banco_dados.executor": "Run",
     "Python.calculadora_por_funçao.executor": "Run",
     "Python.estacionamento.executor": "Run",
     "Python.estoque_senai.executor": "Run",
@@ -80,6 +84,9 @@
     "settings.editor.splitter.proportion": "0.2690583"
   }
 }]]></component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\usuario\Downloads" />
@@ -92,7 +99,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.jogovelha">
-    <configuration name="estacionamento" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="001" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/senai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlite" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/senai/estacionamento.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlite/001.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="estoque_senai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="banco_dados" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/senai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/senai/estoque_senai.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/banco_dados.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,10 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.jogovelha" />
+        <item itemvalue="Python.001" />
+        <item itemvalue="Python.banco_dados" />
         <item itemvalue="Python.velha_5x5" />
         <item itemvalue="Python.jogo_da_velha" />
-        <item itemvalue="Python.estacionamento" />
-        <item itemvalue="Python.estoque_senai" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710710562345</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="senai">
+      <option name="closed" value="true" />
+      <created>1710811928179</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710811928179</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

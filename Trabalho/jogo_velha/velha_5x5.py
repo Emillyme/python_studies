@@ -4,6 +4,7 @@ import inquirer
 import sys
 
 
+
 def pedir_nome(n_jogador: int, simbolizin: str):
     return input(f'\033[1;37m[{simbolizin}]\033[m Digite o nome do \033[1mjogador {n_jogador}\033[m: ')
 

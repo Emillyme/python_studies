@@ -3,6 +3,7 @@ from itertools import product
 import inquirer
 import sys
 from velha_5x5 import main5
+import banco_dados
 
 
 def pedir_nome(n_jogador:int, simbolizin:str):
@@ -41,7 +42,7 @@ def perguntas():
             print('Valor errado. Tente de novo.')
 
 
-def ganhar(jogo, jogador_atual):
+def ganhar(jogo, jogador_atual, n1, n2):
     for i in range(3):
         if jogo[i][0] == jogo[i][1] == jogo[i][2] == jogador_atual or \
                 jogo[0][i] == jogo[1][i] == jogo[2][i] == jogador_atual:
@@ -59,29 +60,28 @@ def ganhar(jogo, jogador_atual):
         if jogo[i][j] == ' ':
             return False
 
-    print('Empate')
     return False
 
-
-def aparecer_blocotexto(pontos_x, pontos_O, n1, n2):
-    try:
-        placarzinho = open("placar3.txt", "a")
-        dados = f'''JOGADOR X: {n1} PONTOS: {pontos_x}
-JOGADOR O: {n2} PONTOS: {pontos_O}\n\n'''
-        placarzinho.write(dados)
-        placarzinho.close()
-        print('Gravado com sucesso')
-    except:
-        print('Erro no cadastro.')
-
-
-def ler_historico():
-    try:
-        with open("placar3.txt", "r") as placar:
-            for historico in placar:
-                print(historico)
-    except FileNotFoundError:
-        print('Arquivo não encontrado.')
+#
+# def aparecer_blocotexto(pontos_x, pontos_O, n1, n2):
+#     try:
+#         placarzinho = open("placar3.txt", "a")
+#         dados = f'''JOGADOR X: {n1} PONTOS: {pontos_x}
+# JOGADOR O: {n2} PONTOS: {pontos_O}\n\n'''
+#         placarzinho.write(dados)
+#         placarzinho.close()
+#         print('Gravado com sucesso')
+#     except:
+#         print('Erro no cadastro.')
+#
+#
+# def ler_historico():
+#     try:
+#         with open("placar3.txt", "r") as placar:
+#             for historico in placar:
+#                 print(historico)
+#     except FileNotFoundError:
+#         print('Arquivo não encontrado.')
 
 
 def main():
@@ -92,6 +92,7 @@ def main():
     jogador2 = {'simbolo': '\033[1;31mO\033[m', 'nome_jogador': n2}
     pontos_O = 0
     pontos_x = 0
+
 
     while True:
         jogo = ([' ', ' ', ' '],
@@ -113,7 +114,7 @@ def main():
                 time.sleep(0.5)
                 continue
 
-            if ganhar(jogo, jogador_atual):
+            if ganhar(jogo, jogador_atual, n1, n2):
                 if jogador_atual == jogador1['simbolo']:
                     pontos_x += 1
                 elif jogador_atual == jogador2['simbolo']:
@@ -123,7 +124,7 @@ def main():
                 for i in range(3):
                     print('.', end='')
                     time.sleep(1)
-                aparecer_blocotexto(pontos_x, pontos_O, n1, n2)
+                banco_dados.inserir_dados(jogador1['nome_jogador'], jogador2['nome_jogador'], pontos_x, pontos_O)
                 break
             else:
                 # Alternar entre jogadores
@@ -140,15 +141,14 @@ def main():
         questions = [
             inquirer.List('escolha', message="Deseja continuar competindo?",
                           choices=['MAIS UMA PARTIDA QUERIDÃO?',
-                                   'Sair e ver Histórico de Partida',
+                                   'Histórico de Partida',
                                    'UM DESAFIO?'])
         ]
 
         answers = inquirer.prompt(questions)
 
-        if answers['escolha'] == 'Sair e ver Histórico de Partida':
-            ler_historico()
-            sys.exit()
+        if answers['escolha'] == 'Histórico de Partida':
+            banco_dados.imprimir_dados()
 
         elif answers['escolha'] == 'MAIS UMA PARTIDA QUERIDÃO?':
             continue
