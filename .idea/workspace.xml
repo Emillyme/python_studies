@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14a5f1a-038d-4ba7-8e45-968c33abaa97" name="Changes" comment="tic tac toe with sqlite">
-      <change afterPath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_velha_bot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/022.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/023.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/024.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/025.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/026.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula09/manipulacao_texto.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula10/028.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercicios/aula10/029.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex000.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex000.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex0004.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex0004.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex002.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex003.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/isnumeric....py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex005.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex005.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/ex006.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ex/ex006.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicios/jogo_da_forca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/jogo_da_forca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_velha_bot/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +57,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.001.executor": "Run",
+    "Python.022.executor": "Run",
+    "Python.023.executor": "Run",
+    "Python.024.executor": "Run",
+    "Python.025.executor": "Run",
+    "Python.026.executor": "Run",
+    "Python.028.executor": "Run",
+    "Python.029.executor": "Run",
     "Python.agenda.executor": "Run",
     "Python.aula07.executor": "Run",
     "Python.aula08.executor": "Run",
@@ -90,14 +113,15 @@
       <recent name="D:\usuario\Downloads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\PythonCharm\python_studies\Exercicios\aula09" />
+      <recent name="C:\Users\usuario\PythonCharm\python_studies\Exercicios" />
+      <recent name="C:\Users\usuario\PythonCharm\python_studies\Exercicios\ex" />
       <recent name="C:\Users\usuario\PythonCharm\python_studies\Trabalho" />
       <recent name="C:\Users\usuario\PythonCharm\python_studies\senai" />
-      <recent name="C:\Users\usuario\PythonCharm\python_studies\Exercicios" />
-      <recent name="C:\Users\usuario\PythonCharm\python_studies" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="001" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="022" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercicios/aula09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlite/001.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicios/aula09/022.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="banco_dados" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="023" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercicios/aula09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/banco_dados.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicios/aula09/023.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jogovelha" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="024" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,33 +174,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercicios/aula09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/jogovelha.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_studies" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_velha_bot" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/jogo_velha_bot/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicios/aula09/024.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="velha_5x5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="025" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_studies" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,11 +196,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trabalho/jogo_velha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercicios/aula09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trabalho/jogo_velha/velha_5x5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicios/aula09/025.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="026" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_studies" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercicios/aula09" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicios/aula09/026.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.jogovelha" />
-        <item itemvalue="Python.001" />
-        <item itemvalue="Python.banco_dados" />
-        <item itemvalue="Python.velha_5x5" />
+        <item itemvalue="Python.026" />
+        <item itemvalue="Python.025" />
+        <item itemvalue="Python.024" />
+        <item itemvalue="Python.023" />
+        <item itemvalue="Python.022" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711069554357</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="tic tac toe with sqlite">
+      <option name="closed" value="true" />
+      <created>1711070230195</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711070230195</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

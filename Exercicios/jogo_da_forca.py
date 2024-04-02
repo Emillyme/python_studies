@@ -1,4 +1,3 @@
-
 palavra = 'mesa digitalizadora'
 letrasUsuario = []
 chances = 7
